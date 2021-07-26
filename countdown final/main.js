@@ -52,3 +52,10 @@ function aler()
     }
 }
 setTimeout(aler,2000);
+// echo "# count-down" >> README.md
+// git init
+// git add README.md
+// git commit -m "first commit"
+// git branch -M master
+// git remote add origin https://github.com/r1558/count-down.git
+// git push -u origin master

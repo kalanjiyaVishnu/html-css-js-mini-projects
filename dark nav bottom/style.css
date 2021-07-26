@@ -1,0 +1,182 @@
+:root
+{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    --tp: rgb(231, 231, 231);
+    --ts: rgb(255, 255, 255);
+    --bg:rgb(17, 17, 17);
+}
+
+
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar
+{
+    width: 0.25rem;   
+}
+body::-webkit-scrollbar-track{
+    background: rgb(49, 49, 49);
+}
+body::-webkit-scrollbar-thumb
+{
+    background: blueviolet;
+}
+.main-content
+{
+    margin-left: 5rem;
+    
+}
+
+.navbar
+{
+    position: fixed;
+    background-color: rgb(26, 26, 26);
+    
+    transition: width 200ms ease;
+}
+/* ul */
+.navbar-nav
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+}
+/* contents inside of the ul */
+
+
+.nav-items
+{
+  width:100%;
+  
+}
+.navbar-nav>li:last-child
+{
+    margin-top: auto;
+}
+
+.nav-links
+{
+   
+    display: flex;
+   align-items: center;
+   height: 5rem;
+
+   text-decoration: none;
+   color: rgb(224, 224, 224);
+   filter: grayscale(100%) opacity(0.7);
+   transition: all 600ms ease;
+}
+.nav-links svg
+{
+    width: 1rem;
+
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.nav-links:hover
+{
+    filter: grayscale(0%) opacity(1);
+    background: rgb(37, 37, 37);
+    color: blueviolet;
+}
+
+
+
+.nav-text
+{
+   
+   display: none;
+   margin-left: 1.6rem;
+   
+}
+
+.fa-primary
+{
+
+}
+.fa-secondary
+{
+    
+}
+.fa-primary ,
+.fa-secondary
+{
+    transition:600ms;
+}
+
+.logo
+{
+    text-align: center;
+    text-transform: uppercase;
+    background-color:rgb(17, 17, 17);
+    width: 100%;
+    letter-spacing: 0.3ch;
+
+}
+.logo svg
+{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+.navbar:hover .logo svg{
+    transform: rotate(-90deg);
+}
+
+@media only screen and (min-width:600px) {
+
+    .navbar
+    {
+        height: 100vh;
+    width: 5rem;
+    top: 0;
+    }
+    .navbar:hover
+    {
+        width: 14rem;
+    }
+    .navbar:hover .nav-text
+    {
+        display: block;
+        
+    }
+}
+@media only screen and (max-width:599px) {
+
+    .navbar
+    {
+        height: 5rem;
+    width: 100%;
+    bottom: 0;
+    }
+    .logo
+    {
+        display: none;
+    }
+    .navbar-nav
+    {
+        flex-direction: row;
+        
+    }
+
+    .nav-links{
+        
+        justify-content: center;
+    }
+    .main-content
+    {
+        margin: 1rem;
+    }
+    
+}
