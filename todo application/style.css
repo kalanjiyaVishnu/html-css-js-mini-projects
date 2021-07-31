@@ -1,0 +1,183 @@
+:root{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+    box-sizing: border-box;
+    font-size: 16px;
+    --bg-pri: ;
+    font-family: 'Poppins',sans-serif;
+}
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(27, 27, 27);
+    color: rgb(255, 248, 239);
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+h1
+{
+    margin: auto;
+    font-size: 2rem;
+    width: 10rem;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+
+}
+
+.container
+{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 1.5rem;
+    color: #c2fbd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+/* input with the btn */
+.container .head
+{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+input{
+    border: none;
+    text-decoration: none;
+    background-color: rgb(41, 41, 41);
+    color: aliceblue;
+    font-family: inherit;
+    border-radius: 2px;
+    text-align: center;
+    outline: none;
+}
+.btn
+{
+    color: aliceblue;
+   font-size: 1rem;
+   border: none;
+    text-decoration: none;
+    margin-left: 0.25rem; 
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: rgb(41, 41, 41);
+}
+svg{
+    width: 100%;
+    max-width: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.btn-done
+{
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    margin-left: 0.25rem; 
+    border-radius: 2px;
+    padding: 0 0.4rem;
+    transform: translateY(15%);
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+.btn:focus
+{
+    background-color: rgb(24, 24, 24);
+}
+.btn:hover
+{
+    background-color: rgb(59, 59, 59);
+}
+.btn:focus
+{
+    background-color: rgb(24, 24, 24);
+}
+.head button{
+    padding: 0.5rem;
+}
+/* ul-container */
+
+.todo-container
+{
+
+   display: none;
+   color: rgb(41, 41, 41);
+    background-color: antiquewhite;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* box-shadow: ; */
+    width: 100%;
+    
+}
+.show 
+{
+    /* display: none; */
+    display: block;
+    
+}
+/* ul */
+.todo-items
+{
+    padding-top: 1rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+.todo-item
+{
+    display: flex;
+    
+    align-items: baseline;
+}
+.todo-item .btn
+{
+    padding: 0.2rem 1rem; 
+    margin-bottom: 1rem;
+}
+.todo-item:hover .btn {
+    color: rebeccapurple;
+}
+.todo-item:hover .btn-done
+{
+    color: rebeccapurple;
+}
+.striker
+{
+    text-decoration: line-through;
+    color: rgb(54, 54, 54);
+    /* font-family: Helvetica, sans-serif; */
+    text-shadow: 3px 3px 2px 2px black;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(255, 0, 0, 0.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    font-style: italic;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+ 

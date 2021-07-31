@@ -180,3 +180,29 @@ body::-webkit-scrollbar-thumb
     }
     
 }
+
+.btn
+{
+    color: #999;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(31, 31, 31,0.85);
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: center;
+    transition: all 600ms;
+}
+.btn:hover
+{
+    box-shadow: 0 2px 5px #999;  
+    color: #fff;
+    background-color: rgba(31, 31, 31,1);
+}
+.btn:focus
+{
+    color: tomato;
+}
