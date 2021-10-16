@@ -16,7 +16,7 @@ function setdate(result)
 function countdown()
 {
     let date = new Date();
-    const tsecs = (chr - date)/1000;
+    const tsecs = (chr - date)/1000; //total seconds 
     const esecs = Math.floor(tsecs)%60;
     const emins = Math.floor(tsecs/60)%60;
     const ehours = Math.floor(tsecs/3600)%24;
